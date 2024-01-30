@@ -1,6 +1,0 @@
-dependencies {
-  implementation "org.springframework.boot:spring-boot-starter-cache"
-  implementation "org.redisson:redisson"
-  testImplementation "org.testcontainers:junit-jupiter"
-  testImplementation "org.testcontainers:testcontainers"
-}

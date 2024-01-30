@@ -40,7 +40,6 @@ management:
           - loggers
           - prometheus
           - threaddump
-          - caches
           - liquibase
   endpoint:
     health:
@@ -90,7 +89,7 @@ management:
 
 spring:
   application:
-    name: onlineShopWebService
+    name: OnlineShop
   profiles:
     # The commented value for `active` can be replaced with valid Spring profiles to load.
     # Otherwise, it will be filled in by gradle when building the JAR file
@@ -139,13 +138,13 @@ spring:
       enabled: true
   task:
     execution:
-      thread-name-prefix: online-shop-web-service-task-
+      thread-name-prefix: online-shop-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: online-shop-web-service-scheduling-
+      thread-name-prefix: online-shop-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -176,7 +175,7 @@ info:
 
 jhipster:
   clientApp:
-    name: 'onlineShopWebServiceApp'
+    name: 'onlineShopApp'
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #   allowed-origins: "http://localhost:8100,http://localhost:9000"
@@ -186,12 +185,12 @@ jhipster:
   #   allow-credentials: true
   #   max-age: 1800
   mail:
-    from: onlineShopWebService@localhost
+    from: OnlineShop@localhost
   api-docs:
     default-include-pattern: /api/**
     management-include-pattern: /management/**
-    title: Online Shop Web Service API
-    description: Online Shop Web Service API documentation
+    title: Online Shop API
+    description: Online Shop API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:

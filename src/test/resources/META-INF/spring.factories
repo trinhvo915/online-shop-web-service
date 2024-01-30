@@ -1,3 +1,2 @@
 org.springframework.test.context.ContextCustomizerFactory = online.shop.web.\
-    service.config.SqlTestContainersSpringContextCustomizerFactory,online.shop.\
-    web.service.config.RedisTestContainersSpringContextCustomizerFactory
+    config.SqlTestContainersSpringContextCustomizerFactory

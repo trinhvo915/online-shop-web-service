@@ -15,7 +15,7 @@ plugins {
     // jhipster-needle-gradle-plugins - JHipster will add additional gradle plugins here
 }
 
-group = "online.shop.web.service"
+group = "online.shop.web"
 version = "0.0.1-SNAPSHOT"
 
 description = ""
@@ -44,7 +44,6 @@ spotless {
     }
 }
 
-apply from: "gradle/cache.gradle"
 apply from: "gradle/liquibase.gradle"
 // jhipster-needle-gradle-apply-from - JHipster will add additional gradle scripts to be applied here
 
@@ -91,7 +90,7 @@ eclipse {
 defaultTasks "bootRun"
 
 springBoot {
-    mainClass = "online.shop.web.service.OnlineShopWebServiceApp"
+    mainClass = "online.shop.web.OnlineShopApp"
 }
 
 test {

@@ -9,7 +9,7 @@ jib {
         }
     }
     to {
-        image = "onlineshopwebservice:latest"
+        image = "onlineshop:latest"
     }
     container {
         entrypoint = ["bash", "-c", "/entrypoint.sh"]

@@ -1,7 +1,7 @@
 apply plugin: "war"
 
 bootWar {
-    mainClass = "online.shop.web.service.OnlineShopWebServiceApp"
+    mainClass = "online.shop.web.OnlineShopApp"
     includes = ["WEB-INF/**", "META-INF/**"]
 }
 
